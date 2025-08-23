@@ -58,7 +58,6 @@
           
           <li><a href="#contact"></a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
     </div>
@@ -296,53 +295,58 @@
     <h2>Contact</h2>
     <p>Hubungi kami untuk info lebih lanjut</p>
   </div><!-- End Section Title -->
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="contact-card p-4">
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="contact-card d-flex align-items-center p-4">
-
+        <div class="row align-items-center">
           <!-- Foto -->
-          <div class="contact-photo me-4">
-            <img src="assets/img/FotoCoach.jpeg" alt="Coach Darmin" class="img-fluid rounded-rectangle">
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <img src="assets/img/FotoCoach.jpeg" alt="Coach Herlin Riza" class="img-fluid contact-photo">
           </div>
 
           <!-- Info -->
-          <div class="contact-info flex-grow-1">
-            <h3 class="mb-1">Coach Herlin Riza</h3>
-            <p class="text-muted mb-3">Fitness Coach</p>
+          <div class="col-md-8">
+            <div class="contact-info">
+              <h3 class="mb-1">Coach Herlin Riza</h3>
+              <p class="text-muted mb-3">Fitness Coach</p>
 
-            <!-- WhatsApp -->
-            <a href="https://wa.me/6285251166667" target="_blank" class="btn btn-whatsapp mb-3">
-              <i class="bi bi-whatsapp"></i> 085251166667
-            </a>
+              <!-- WhatsApp -->
+              <a href="https://wa.me/6285251166667" target="_blank" class="btn btn-whatsapp mb-3">
+                <i class="bi bi-whatsapp"></i> 085251166667
+              </a>
 
-            <!-- Social Media -->
-            <div class="social-links">
-              <a href="https://www.instagram.com/sahabat.sejati.official?utm_source=qr&igsh=MWxsd29iMXllOGlocg==" class="btn btn-outline-dark me-2"><i class="bi bi-instagram"></i> Instagram</a>
-              <a href="https://www.facebook.com/share/16jVmUwedt/" class="btn btn-outline-dark me-2"><i class="bi bi-facebook"></i> Facebook</a>
-              <a href="https://www.tiktok.com/@coach_herlin.amk?_t=ZS-8z3KA97tksn&_r=1" class="btn btn-outline-dark"><i class="bi bi-tiktok"></i> TikTok</a>
+              <!-- Social Media -->
+              <div class="social-links">
+                <a href="https://www.instagram.com/sahabat.sejati.official?utm_source=qr&igsh=MWxsd29iMXllOGlocg==" class="btn btn-outline-dark me-2"><i class="bi bi-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/share/16jVmUwedt/" class="btn btn-outline-dark me-2"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="https://www.tiktok.com/@coach_herlin.amk?_t=ZS-8z3KA97tksn&_r=1" class="btn btn-outline-dark"><i class="bi bi-tiktok"></i> TikTok</a>
+              </div>
             </div>
           </div>
-
         </div>
+
       </div>
     </div>
   </div>
+</div>
 </section>
 
 <style>
 .contact-card {
   background: #fff;
-  border-radius: 17px;
+  border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-.contact-photo img {
-  width: 280px; /* Sesuaikan ukuran foto */
-  height: auto;
+
+.contact-photo {
+  width: 100%;
+  max-width: 320px; /* biar fotonya lebih gede di HP */
   border-radius: 16px;
   object-fit: cover;
 }
+
 .btn-whatsapp {
   display: inline-block;
   background: #25d366;
@@ -353,13 +357,17 @@
   font-weight: 500;
   transition: 0.3s;
 }
+
 .btn-whatsapp:hover {
   background: #1ebe5d;
 }
+
 .social-links .btn {
   border-radius: 8px;
   font-weight: 500;
+  margin-bottom: 8px;
 }
+
 </style>
 
 
