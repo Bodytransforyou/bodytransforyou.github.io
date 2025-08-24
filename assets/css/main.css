@@ -900,9 +900,9 @@ section,
   position: absolute;
   inset: 0;
   display: block;
-  width: 100%;
+  max-width: auto;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   z-index: 1;
 }
