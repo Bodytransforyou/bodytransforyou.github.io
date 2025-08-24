@@ -27,14 +27,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Avilon
-  * Template URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -151,19 +143,16 @@
     <!-- Highlight (How It Works) Section -->
     <section id="highlight" class="highlight-section">
       <div class="container" data-aos="zoom-in">
-        <!-- CENTERED HEADINGS -->
         <div class="text-center mb-3">
           <h2 class="mb-2">Mau badan ideal dengan cara sehat?</h2>
           <h1 class="highlight-brand">Herbalife <span>SOLUSINYA</span></h1>
         </div>
 
         <div class="row align-items-center g-4">
-          <!-- Image FIRST on mobile, SECOND on desktop -->
           <div class="col-lg-6 text-center order-1 order-lg-2">
             <img src="Nutrisi.png" width="540" height="540" alt="Nutrisi Herbalife" class="img-fluid hiw-illustration">
           </div>
 
-          <!-- Text SECOND on mobile, FIRST on desktop -->
           <div class="col-lg-6 text-center text-lg-start order-2 order-lg-1">
             <div class="hiw mt-2">
               <h3 class="hiw-title text-center text-lg-start">Bagaimana Cara Kerjanya?</h3>
@@ -231,7 +220,7 @@
       @media (max-width: 991.98px){
         .highlight-brand { font-size:32px }
         .hiw-item p { font-size:14px }
-        .hiw-illustration { margin-bottom:12px } /* space under image on mobile */
+        .hiw-illustration { margin-bottom:12px }
       }
     </style>
 
@@ -281,8 +270,25 @@
       </div>
     </section>
 
+    <!-- ✅ FIXED CSS: scope flex to visible slides only; keep images responsive -->
     <style>
-      .rounded-rectangle { width:400px; height:300px; object-fit:contain }
+      /* Only center visible slides; don't override hidden ones */
+      #testimonialCarousel .carousel-item.active,
+      #testimonialCarousel .carousel-item-next,
+      #testimonialCarousel .carousel-item-prev{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+
+      /* Responsive image sizing; keep aspect ratio */
+      .rounded-rectangle{
+        width:min(400px, 90vw);
+        height:auto;
+        object-fit:contain;
+        display:block;
+      }
+
       .mobile-nav-toggle { display:none !important }
     </style>
 
